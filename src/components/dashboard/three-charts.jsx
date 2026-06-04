@@ -1,0 +1,48 @@
+import classes from './dashboard.module.css';
+
+export default function threeCharts() {
+    // Could abstract more  but  for now this is fine
+    return (
+	<div className="row justify-content-center">
+            <div className="col-lg-4 col-md-4">
+		<div className={`${classes.whiteBox}`} >
+		    <h3 className={classes.boxTitle}>Total Visit</h3>
+		    <ul className={`${classes.listInline} d-flex align-items-center mb-0`}>
+			<li>
+			    <div id="sparklinedash"><canvas style={{display:'inline-block', width:'67px', height:'30px', verticalAlign: 'top'}} width="67" height="30"></canvas></div>
+			</li>
+			<li className="ms-auto">
+			    <span className={`${classes.counter} ${classes.textSuccess}`}>659</span>
+			</li>
+		    </ul>
+		</div>
+            </div>
+            <div className="col-lg-4 col-md-12">
+		<div className={`${classes.whiteBox}`}>
+		    <h3 className={`${classes.boxTitle}`}>Total Page Views</h3>
+		    <ul className={`${classes.listInline} d-flex align-items-center mb-0`}>
+			<li>
+			    <div id="sparklinedash2"><canvas style={{display:'inline-block', width:'67px', height:'30px', verticalAlign: 'top'}} width="67" height="30"></canvas></div>
+			</li>
+			<li className="ms-auto">
+			    <span className={`${classes.counter} ${classes.textSuccess}`}>869</span>
+			</li>
+		    </ul>
+		</div>
+            </div>
+            <div className="col-lg-4 col-md-12">
+		<div className={classes.whiteBox}>
+		    <h3 className={classes.boxTitle}>Unique Visitor</h3>
+		    <ul className={`${classes.listInline} d-flex align-items-center mb-0`}>
+			<li>
+			    <div id="sparklinedash3"><canvas style={{display:'inline-block', width:'67px', height:'30px', verticalAlign: 'top'}} width="67" height="30"></canvas></div>
+			</li>
+			<li className="ms-auto">
+			    <span className={`${classes.counter} ${classes.textSuccess}`}>911</span>
+			</li>
+		    </ul>
+		</div>
+            </div>
+        </div>
+    );
+}

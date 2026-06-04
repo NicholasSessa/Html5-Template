@@ -1,0 +1,117 @@
+.topbar {
+  position: relative;
+  z-index: 50;
+  height: 60px;
+  background: #2f323e;
+}
+
+.topbar .topNavbar {
+  min-height: 60px;
+  padding: 0px;
+}
+@media (min-width: 768px) {
+  .navbarExpandMd {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.topbar .navbarHeader {
+    line-height: 60px;
+    background: #fff;
+    width: 240px;
+}
+.topbar .topNavbar .navbarHeader .navbarBrand {
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0 10px 0 10px;
+}
+.topbar .topNavbar .navbarHeader .navbarBrand .logoIcon {
+  margin-right: 5px;
+}
+.topbar .topNavbar .navbarHeader .navbarBrand .logoText {
+  padding-left: 5px;
+}
+.navbarCollapse {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+   flex: 1;
+}
+
+@media (min-width: 768px) {
+  .navbarExpandMd .navbarCollapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+.dark {
+    background: #2f323e
+}
+.topbar .appSearch {
+  position: relative;
+  margin: 0;
+    margin-right: 0px;
+}
+.topbar .appSearch .formControl {
+  border: none;
+  font-size: 13px;
+  color: #4c5667;
+  padding-left: 20px;
+  padding-right: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 30px;
+  font-weight: 600;
+  width: 180px;
+  display: inline-block;
+  line-height: 30px;
+  margin-top: 15px;
+  border-radius: 40px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+.topbar .appSearch .leButton {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #4c5667;
+}
+.topbar .profilePic {
+  color: #fff;
+  padding: 0 14px 0 8px;
+  line-height: 60px;
+  min-height: 60px;
+}
+.topbar .profilePic img {
+  margin-right: 10px;
+}
+.topbar .profilePic img.imgCircle {
+  border-radius: 50%;
+}

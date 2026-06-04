@@ -1,0 +1,40 @@
+
+
+.callChat {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.chatOnline li:hover .callChat {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chatOnline li a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.chatOnline li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chatOnline li small {
+  font-size: 10px;
+}
+
+.btnCircle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

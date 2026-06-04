@@ -1,0 +1,87 @@
+import classes from "./dashboard.module.css";
+
+export default function RecentComments() {
+    const comments = [
+  {
+    name: "James Anderson",
+    image: "plugins/images/users/varun.jpg",
+    status: "Pending",
+    statusClass: "bg-primary",
+    date: "April 14, 2024",
+  },
+  {
+    name: "Michael Jorden",
+    image: "plugins/images/users/genu.jpg",
+    status: "Approved",
+    statusClass: "bg-success",
+    date: "April 14, 2024",
+  },
+  {
+      name: "Johnathan Doeting",
+      image: "plugins/images/users/ritesh.jpg",
+      status: "Rejected",
+      statusClass: "bg-danger",
+      date: "April 14, 2024",
+  },
+    ];
+    const users = [
+  {
+    name: "Varun Dhavan",
+    image: "plugins/images/users/varun.jpg",
+    status: "online",
+    statusClass: "text-success",
+  },
+  {
+    name: "Genelia Deshmukh",
+    image: "plugins/images/users/genu.jpg",
+    status: "Away",
+    statusClass: "text-warning",
+  },
+  {
+      name: "Ritesh Deshmukh",
+      image: "plugins/images/users/ritesh.jpg",
+      status: "Busy",
+      statusClass: "text-danger",
+  },
+    ];
+    return (
+	<>
+	    <div className="comment-widgets">
+		{comments.map((comment) => (
+		    <div
+			key={comment.name}
+			className="d-flex flex-row comment-row p-3"
+		    >
+			<div className="p-2">
+			    <img
+				src={comment.image}
+				alt={comment.name}
+				width={50}
+				className="rounded-circle"
+			    />
+			</div>
+
+			<div className="comment-text ps-2 ps-md-3 w-100">
+			    <h5 className="font-medium">{comment.name}</h5>
+
+			    <span className="mb-3 d-block">
+				Lorem Ipsum is simply dummy text...
+			    </span>
+
+			    <div className="comment-footer d-md-flex align-items-center">
+				<span className={`badge rounded ${comment.statusClass}`}>
+				    {comment.status}
+				</span>
+
+				<div className="text-muted fs-2 ms-auto mt-2 mt-md-0">
+				    {comment.date}
+				</div>
+			    </div>
+			</div>
+		    </div>
+		))}
+	    </div>
+	</>
+
+    );
+}

@@ -1,0 +1,16 @@
+import Breadcrumb from "@/components/breadcrumb";
+import ThreeCards from "@/components/dashboard/three-charts";
+import classes from "./page.module.css";
+import YearlySales from "@/components/dashboard/yearly-sales";
+export default function Page() {
+    return(
+	<>
+	    <div className={classes.pageWrapper}>
+		<div className="container mt-4">
+		    <ThreeCards/>
+		    <YearlySales/>
+		</div>
+	    </div>
+	</>
+    );
+}

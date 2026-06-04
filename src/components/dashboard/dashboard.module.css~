@@ -1,0 +1,62 @@
+.whiteBox {
+  background: #fff;
+  padding: 25px;
+    margin-bottom: 30px;
+}
+.whiteBox .boxTitle {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 18px;
+}
+.listInline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.listInline .counter {
+  font-size: 24px;
+  font-weight: 100;
+}
+.textSuccess {
+  color: #7ace4c !important;
+}
+.textInfo {
+  color: #2cabe3 !important;
+}
+
+.textInverse {
+  color: #4c5667 !important;
+}
+
+.chartistTooltip {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  border-radius: 2px;
+  padding: 10px 20px;
+  background: #2cabe3;
+  color: #fff;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.chartistTooltip:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  border: 5px solid transparent;
+  border-top-color: #2cabe3;
+}
+
+.chartistTooltip.tooltipShow {
+  opacity: 1;
+}
+
+

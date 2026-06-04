@@ -1,0 +1,77 @@
+.leftSidebar {
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  top: 0px;
+  z-index: 10;
+  padding-top: 64px;
+  background: #fff;
+  -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+}
+
+.sidebarBgSkin6 {
+       color: #54667a;
+}
+
+.scrollSidebar {
+  height: calc(100% - 20px);
+  position: relative;
+}
+
+.sidebarNav {
+ 
+}
+
+.in {
+    in: true;
+}
+
+.sidebarItem {
+    width: 240px;
+    list-style: none;
+}
+
+.pt2 {
+    padding-top: 2;
+}
+
+.sidebarLink {
+    sidebar-link: true;
+}
+
+.wavesEffect {
+    waves-effect: true;
+}
+
+.wavesDark {
+    waves-dark: true;
+}
+
+.hideMenu {
+    hide-menu: true;
+}
+
+.selected {
+    selected: true;
+}
+
+.textCenter {
+    text-center: true;
+}
+
+.p20 {
+    padding: 20;
+}
+
+.btn {
+    btn: true;
+}
+
+.danger {
+    danger: true;
+}
+
+.textWhite {
+    text-white: true;
+}

@@ -1,0 +1,15 @@
+
+.whiteBox {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.whiteBox .boxTitle {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 18px;
+}
+.pageWrapper {
+    background: #edf1f5;
+    min-height: 100vh;
+}

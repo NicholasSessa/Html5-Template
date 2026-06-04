@@ -1,0 +1,20 @@
+import classes from "./dashboard.module.css"
+import StatusCard from "@/components/parts/status-card";
+export default function UserStatus() {
+    return(
+	<div className="col-lg-4 col-md-12 col-sm-12">
+	    <div className={`card ${classes.whiteBox} p-0`}>
+		<div className={classes.cardHeading}>
+		    <h3 className={`${classes.boxTitle} mb-0`}>
+			User Status
+		    </h3>
+		</div>
+		<div className="card-body">
+		    <ul className={classes.chatOnline}>
+			<StatusCard/>
+		    </ul>
+		</div>
+	    </div>
+	</div>
+    );
+}
