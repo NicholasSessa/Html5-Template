@@ -11,7 +11,26 @@ export default function UserStatus() {
 		</div>
 		<div className="card-body">
 		    <ul className={classes.chatOnline}>
-			<StatusCard/>
+			<StatusCard
+			    name="John Doe"
+			    icon="/images/users/agent.jpg"
+			    status={0}  
+			/>
+			<StatusCard
+			    name="Christina Massanger"
+			    icon="/images/users/4.jpg"
+			    status={1}
+			/>
+			<StatusCard
+			    name="Robert Chase"
+			    icon="/images/users/d4.jpg"
+			    status={2}
+			/>
+			<StatusCard
+			    name="Vsauce Micheal"
+			    icon="/images/users/5.jpg"
+			    status={-1}
+			/>
 		    </ul>
 		</div>
 	    </div>
