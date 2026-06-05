@@ -30,9 +30,13 @@ export default function RootLayout({ children }) {
       <html lang="en" >
 	  <body className={`${nunito.className}`}>
 	      <TopBar />
-	      <SideBar />
-
-	      {children}
+	      <div className="layout">
+		  <SideBar />
+		  <main className="mainContent">
+		      
+		      {children}
+		  </main>
+	      </div>
 	  </body>
       </html>
   );

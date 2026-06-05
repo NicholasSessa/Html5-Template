@@ -1,77 +1,75 @@
-.leftSidebar {
-  position: absolute;
-  width: 240px;
-  height: 100%;
-  top: 0px;
-  z-index: 10;
-  padding-top: 64px;
-  background: #fff;
-  -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
-          box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
-}
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-.sidebarBgSkin6 {
-       color: #54667a;
-}
-
-.scrollSidebar {
-  height: calc(100% - 20px);
-  position: relative;
-}
-
-.sidebarNav {
- 
-}
-
-.in {
-    in: true;
-}
-
-.sidebarItem {
     width: 240px;
-    list-style: none;
+    bottom: 0;
+
+    padding-top: 64px;
+
+    background: white;
+    box-shadow: 1px 0px 20px rgba(0,0,0,.08);
+}
+.scrollSidebar {
+    
 }
 
-.pt2 {
-    padding-top: 2;
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.sidebarLink {
-    sidebar-link: true;
+
+.item {
+  list-style: none;
 }
 
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px;
+  text-decoration: none;
+
+    border-left: 3px solid transparent;
+    color: #54667a;
+}
+
+.link:hover {
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.active {
+  border-left: 3px solid #41b3f9;
+  font-weight: 500;
+}
+
+.icon {
+  width: 35px;
+    text-align: center;
+    color: #54667a;
+}
 .wavesEffect {
-    waves-effect: true;
-}
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
 
-.wavesDark {
-    waves-dark: true;
+    will-change: opacity, transform;
+  -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    background-color: rgba(70,70,70)
 }
-
-.hideMenu {
-    hide-menu: true;
-}
-
-.selected {
-    selected: true;
-}
-
-.textCenter {
-    text-center: true;
-}
-
-.p20 {
-    padding: 20;
-}
-
-.btn {
-    btn: true;
-}
-
-.danger {
-    danger: true;
-}
-
-.textWhite {
-    text-white: true;
+.close {
+    display: block;
 }

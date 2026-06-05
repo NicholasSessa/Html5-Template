@@ -87,3 +87,17 @@ a {
 .no-wrap th {
   white-space: nowrap;
 }
+.main-content {
+  margin-left: 240px;
+  
+}
+
+.pageWrapper {
+    margin-left: 240px;
+    min-height: 100vh;
+    background: #edf1f5;
+}
+.layout {
+    position: relative;
+    min-height: 100vh;
+}
