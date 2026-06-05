@@ -1,23 +1,23 @@
 import React from 'react';
 import classes from './side-bar.module.css';
 
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+
+import SideElement from "@/components/parts/side-element"
 export default function SideBar() {
     return(
 	<aside className={classes.sidebar}>
 	    <div className={classes.scrollSidebar}>
 		<nav >
 		    <ul className={classes.nav }>
-			<li className={`pt-2`}>
-			    <a className={`${classes.link}  ${classes.active}`}
-			       href="/"
-			       aria-expanded="false">
-				<i  className={classes.icon} aria-hidden="true">
-				</i>
-				<span className={classes.close}>Dashboard</span>
-			    </a>
-			</li>
+			<SideElement
+			    name="Dashboard"
+			    icon={faClock}
+			    active={false}
+			    link="/"
+			/>
 		    </ul>
-			       
+		    
 		</nav>
 	    </div>
 	</aside>
